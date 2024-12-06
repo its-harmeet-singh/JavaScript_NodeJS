@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Gaming Store</title>
+    <link rel="stylesheet" href="css/loginStyle.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/logo.png" alt="Logo" width="50"> GameVault
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html" id="loginLink">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html" id="registerLink">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin.html" id="adminLink" style="display: none;">Admin</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="logoutLink" style="display: none;">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Login Form -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="login-card">
+                    <h3 class="text-center login-title">Register</h3>
+                        <form id="registerForm">
+                            <div class="form-group">
+                                <label for="regUsername" style="color: aliceblue;">Username</label>
+                                <input type="text" id="regUsername" class="form-control" placeholder="Enter your username">
+                            </div>
+                            <div class="form-group">
+                                <label for="regPassword" style="color: aliceblue;">Password</label>
+                                <input type="password" id="regPassword" class="form-control" placeholder="Enter your password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact" style="color: aliceblue;">Contact</label>
+                                <input type="text" id="contact" class="form-control" placeholder="Enter your contact number" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+                        </form>
+                    <p class="text-center mt-3" style="color: aliceblue;" >Already have an account? <a href="login.html" class="register-link">Login here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
